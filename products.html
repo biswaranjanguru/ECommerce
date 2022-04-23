@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - The WearHouse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/594e5dc7b2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- HEADER SECTION..... -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.jpg" width="200px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>&nbsp;&nbsp;&nbsp;
+                <a href="cart.html"><i class="fa fa-thin fa-cart-shopping fa-2xl" style="color: rgb(231, 217, 143);"><sup><small><span id="cart-products">0</span></small></sup></i></a>
+                <i class="fa-solid fa-bars" onclick="menutoggle()"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+
+        <div class="row-2">
+            <select onchange="location = this.value">
+                <option value="default">Default Sorting</option>
+                <option value="#Clothes">Clothes</option>
+                <option value="#Footwear">Footwear</option>
+                <option value="#Accessories">Accessories</option>
+            </select>
+            <h2 class="title">All Products</h2>
+        </div>
+
+        <div class="row" id="Clothes">
+            <div class="col-3">
+                <a href="detail1.html"><img src="images/p1.jpg"></a>
+                <h4>Casual Black Tee</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$25.00</p>
+            </div>
+            <div class="col-3">
+                <a href="detail2.html"><img src="images/p2.jpg"></a>
+                <h4>Tuxedo (Peaky Blinders Edition)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$200.00</p>
+            </div>
+            <div class="col-3">
+                <a href="detail3.html"><img src="images/p3.jpg"></a>
+                <h4>Leather Jacket</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>$60.00</p>
+            </div>
+        </div>
+
+        <!-- NEW ACCESSORIES -->
+        <div class="row" id="Accessories">
+            <div class="col-3">
+                <a href="detail4.html"><img src="images/p4.jpg"></a>
+                <h4>Rado Wrist Watch (Limited Edition)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>$40.00</p>
+            </div>
+            <div class="col-3">
+                <a href="detail5.html"><img src="images/p5.jpg"></a>
+                <h4>Timex Wrist Watch (Leather Band)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$30.00</p>
+            </div>
+            <div class="col-3">
+                <a href="detail6.html"><img src="images/p6.jpg"></a>
+                <h4>Bentley Momentum Cologne</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>$45.00</p>
+            </div>
+        </div>
+        <div class="row" id="Footwear">
+            <div class="col-3">
+                <a href="detail7.html"><img src="images/p7.jpg"></a>
+                <h4>Nike Shoes and Socks Pair</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>$35.00</p>
+            </div>
+            <div class="col-3">
+                <a href="detail8.html"><img src="images/p8.jpg"></a>
+                <h4>Casual Canvas Shoes</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$20.00</p>
+            </div>
+            <div class="col-3">
+                <a href="detail9.html"><img src="images/p9.jpg"></a>
+                <h4>Nike Air Sneakers</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$30.00</p>
+            </div>
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Andriod and ios mobile phone</p>
+                    <div class="applogo">
+                        <img src="images/logo-playstore.png">
+                        <img src="images/logo-applestore.png">
+                    </div>
+                </div>
+                <div class="footer-col2" id="about">
+                    <img src="images/logo.jpg">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Wardrobe Fashion and Clothing Accessible to the Many.</p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col4" id="contact">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <p class="copyright">Copyright <i class="fa-regular fa-copyright" style="color: rgb(231, 217, 143);"></i>  2022 - Soumyajit Mitra</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
